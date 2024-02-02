@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Mr.Rasintha</title>
-    <link rel="stylesheet" href="body.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style (3).css">
+    <title>Modern Login Page | AsmrProg</title>
 </head>
+
 <body>
-    <div class="full-page">
-        <div class="sub-page">
-            <div class="navigation-bar">
-                <div class="logo">
-                    <a href='index.html'>Mr.Rasintha</a>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <nav>
-                    <ul id='MenuItems'>
-                        <li><a href='index.html'>Home</a></li>
-                        <li><a href='#'>Video</a></li>
-                        <li><a href='#'>Services</a></li>
-                        <li><a href='#'>Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <div class="form-box">
-                        <div class="form">
-                            <form class="login-form">
-                                <center><h1 class="main-heading">Login Form</h1></center>
-				                <input type="text"placeholder="user name"/>
-				                <input type="password"placeholder="password"/>
-				                <button>LOGIN</button>
-				                <p class="message">Not Registered? <a href="#">Register</a></p>
-				            </form>
-                            <form class="register-form">
-                                <center><h1 class="main-heading">Register Form</h1></center>
-				                <input type="text" placeholder="user name"/>
-				                <input type="text" placeholder="email-id"/>
-				                <input type="password" placeholder="password"/>
-				                <button>REGISTER</button>
-				                <p class="message">Already Registered?<a href="#">Login</a>
-				                </p>
-				            </form>
-			             </div>
-	                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <div class="col-1">
-                    <p class='defination'>Welcome our webside<br>You Can like to visit <br> <br>--@Creat By Rasintha_Bandara</p>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
-    </script>
-    <script>
-        $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
-    </script>
+
+    <script src="script (2).js"></script>
 </body>
+
 </html>
