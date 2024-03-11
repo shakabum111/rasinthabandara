@@ -1,133 +1,270 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mr.Rasintha</title>
-        <link rel="shortcut icon" type="image/png" href="ic.png">
-        <link rel="stylesheet" href="styleshhet.css">
-        <link rel="stylesheet" href="stylesheet1.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        
-    </head>
-    <body>
-          <header class="header">
-            
-            <a href="#" class="logo">Mr.Rasintha</a>
-            <nav class="navbar" id="myLinks">
-                <a href="#Home" style="--i:1" class="active" >Home</a>
-                <a href="#About" style="--i:2">About</a>
-                <a href="#Projects" style="--i:4">Projects</a>
-                <a href="#Contact" style="--i:5">Contact</a>
-            </nav>
-        </header>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design #01 | AsmrProg</title>
+</head>
 
-        <section class="home" id="Home">
-            <div class="home-content">
-                <h3>Hello, Welcome My Page</h3>
-                <h1> Rasintha Bandara</h1>
-                <h4 style="--i:6">At Scool & 
-                    Education <br>
-                    joint Now <span class="text"></span></h4>
-                
-                <div class="img">
-                     <img src="1222.jpg" class="responsive">
-                </div>
-                <div class="home-sci">
-                    <a href=""style="--i:7" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-                    <a href=""style="--i:8" target="_blank"><i class='bx bxl-telegram' ></i></a>
-                    <a href="#"style="--i:9" target="_blank"><i class='bx bxl-youtube'></i></a>
-                    <a href=""style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
-                </div>
-                <a href='log.html' style="--i:11" class="btn-box"> Register Now </a>
+<body>
+
+    <div class="container">
+
+        <aside class="left-section">
+            <div class="logo">
+                <button class="menu-btn" id="menu-close">
+                    <i class='bx bx-log-out-circle'></i>
+                </button>
+                <img src="1222.jpg">
+                <a href="index.html">Mr.Rasintha</a>
             </div>
-        </section>
 
-
-        <section>
-            <div class="about" id="About">
-                <div class="about-img">
-                    <img src="photo_2024-01-18_15-33-37.jpg" class="abt-res">
+            <div class="sidebar">
+                <div class="item" id="active">
+                    <i class='bx bx-home-alt-2'></i>
+                    <a href="#">Overview</a>
                 </div>
-                <div class="about-text">
-                    <h2>Dashboard <span>view</span></h2>
-                    <p> <br>
-                        <br>
-                        <a href="index1.html" style="--i:11" class="abtbtn-box">Dashboard</a>
-                    </p>
+                <div class="item">
+                    <i class='bx bx-grid-alt'></i>
+                    <a href="#">Course</a>
+                </div>
+                <div class="item">
+                    <i class='bx bx-folder'></i>
+                    <a href="#">Resources</a>
+                </div>
+                <div class="item">
+                    <i class='bx bx-message-square-dots'></i>
+                    <a href="#">Message</a>
+                </div>
+                <div class="item">
+                    <i class='bx bx-cog'></i>
+                    <a href="#">Setting</a>
                 </div>
             </div>
-        </section>
 
-        
-        <section id="Skills">
-            <h1 class="subtitle">My <span> Helpfull Tools</span></h1>
+            <div class="pic">
+                <img src="assets/pro.png">
+            </div>
 
-        <section id="Projects">
-            <div id="portfolio" class="services">
-                <div class="main-text" id="serv">
-                    <h2>Earn <span>Advertisement</span></h2>
-                    
+            <div class="upgrade">
+                <h5>Upgrade Your Plan</h5>
+                <div class="link">
+                    <a href="#">Go to <b>PRO</b></a>
+                    <i class='bx bxs-chevron-right'></i>
                 </div>
             </div>
-        </section>
 
-        <section id="Services">
-            <div class="project">
-                <div class="container">
-                    <h1 class="sub-title">My <span>Services</span></h1>
-                    <div class="prj-list">
-                        <div>
-                            <i class='bx bx-tv' style="color: #00ff2a;"></i>
-                            <h2>Video</h2>
-                            <p> you Can Studing New technologies Videos</p>
-                            
+        </aside>
+
+        <main>
+            <header>
+                <button class="menu-btn" id="menu-open">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <h5>Hello <b>Friend</b>, welcome back!</h5>
+            </header>
+
+            <div class="separator">
+                <div class="info">
+                    <h3>My Courses</h3>
+                    <a href="#">View All</a>
+                </div>
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+
+            <div class="analytics">
+                <div class="item">
+                    <div class="progress">
+                        <div class="info">
+                            <h5>Locations</h5>
+                            <p>35 Lessons</p>
                         </div>
-                        <div>
-                            <i class='bx bx-desktop' style="color: #00ff15;"></i>
-                            <h2> New knowledge Book</h2>
-                            <p>Motivation,Persenl habite develop, and more books </p>
-                            
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <i class='bx bx-map-pin'></i>
+                </div>
+                <div class="item">
+                    <div class="progress">
+                        <div class="info">
+                            <h5>People</h5>
+                            <p>30 Lessons</p>
                         </div>
-                        <div>
-                            <i class='bx bxs-book' style="color: #00ff0d;"></i>
-                            <h2> Hacking Tools</h2>
-                            <p>Mobile and computer and more device can Hacking </p>
-                            
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <i class='bx bx-user-voice'></i>
+                </div>
+                <div class="item">
+                    <div class="progress">
+                        <div class="info">
+                            <h5>Airport</h5>
+                            <p>45 Lessons</p>
                         </div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <i class='bx bxs-plane-land'></i>
+                </div>
+                <div class="item">
+                    <div class="progress">
+                        <div class="info">
+                            <h5>Places</h5>
+                            <p>20 Lessons</p>
+                        </div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <i class='bx bxs-castle'></i>
+                </div>
+            </div>
+
+            <div class="separator">
+                <div class="info">
+                    <h3>Planning</h3>
+                    <a href="#">View All</a>
+                </div>
+                <input type="date" value="2023-10-15">
+            </div>
+
+            <div class="planning">
+                <div class="item">
+                    <div class="left">
+                        <div class="icon">
+                            <i class='bx bx-book-alt'></i>
+                        </div>
+                        <div class="details">
+                            <h5>Reading - Topic 1</h5>
+                            <p>8:00 - 10:00</p>
+                        </div>
+                    </div>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <div class="icon">
+                            <i class='bx bx-edit-alt'></i>
+                        </div>
+                        <div class="details">
+                            <h5>Writing - Topic 2</h5>
+                            <p>13:00 - 14:00</p>
+                        </div>
+                    </div>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <div class="icon">
+                            <i class='bx bx-headphone'></i>
+                        </div>
+                        <div class="details">
+                            <h5>Listening - Topic 1</h5>
+                            <p>15:00 - 16:00</p>
+                        </div>
+                    </div>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <div class="icon">
+                            <i class='bx bx-volume-low'></i>
+                        </div>
+                        <div class="details">
+                            <h5>Listening - Topic 2</h5>
+                            <p>19:00 - 20:00</p>
+                        </div>
+                    </div>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+            </div>
+        </main>
+
+        <aside class="right-section">
+            <div class="top">
+                <i class='bx bx-bell'></i>
+                <div class="profile">
+                    <div class="left">
+                        <img src="assets/profile.jpg">
+                        <div class="user">
+                            <h5>Reza Mehdikhanlou</h5>
+                            <a href="#">Basic Plan</a>
+                        </div>
+                    </div>
+                    <i class='bx bxs-chevron-right'></i>
+                </div>
+            </div>
+
+            <div class="separator" id="first">
+                <h4>Statistics</h4>
+            </div>
+
+            <div class="stats">
+                <div class="item">
+                    <div class="top">
+                        <p>Courses</p>
+                        <p>Completed</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <h3>02</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="top">
+                        <p>Total Points</p>
+                        <p>Gained</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <h3>250</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="top">
+                        <p>Courses</p>
+                        <p>In Progress</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <h3>03</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="top">
+                        <p>Tasks</p>
+                        <p>Finished</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <h3>250</h3>
                     </div>
                 </div>
             </div>
-        </section>
 
+            <div class="separator">
+                <h4>Weekly Work</h4>
+            </div>
 
-        <section class="contacts" id="Contact">
-            <div class="contact-text">
-                <h2>Contact <span>Me</span></h2>
-                <h4>Let's Work Together</h4>
-                <div class="contact-list">
-                    <li><i class='bx bxs-send'></i>rasinthabandara45@gmail.com</li>
-                    <li><i class="bx bxs-phone-call" ></i>+94771916428</li>
+            <div class="weekly">
+                <div class="title">
+                    <div class="line"></div>
+                    <h5>Tasks This Week</h5>
                 </div>
-                <div class="contact-icons">
-                    <a href="" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href=""><i class='bx bxl-youtube'></i></a>
-                    <a href="" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-                    <a href="" target="_blank"><i class="bx bxl-telegram"></i></a>
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                 </div>
             </div>
-        </section>
-        
-        <div class="last-text">
-            <p>Developed by Rasintha Bandara <i class='bx bx-copyright' style="color: white;"></i> 2024</p>
-        </div>
-        <a href="#Home" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
-        
-        <script src="./files/script.js"></script>
-    </body>  
-</html>
 
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
