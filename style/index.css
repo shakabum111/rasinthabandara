@@ -36,7 +36,7 @@
 
     h1{
         color: #d60000;
-        font-size: 80px;
+        font-size: 40px;
         transform: rotateZ(-361deg);
         display: inline-block;
         -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
@@ -73,7 +73,8 @@
             width: 80px;
         }
     }
- .text{
+
+    .text{
         color: white;
         font-family: 'Courier New', Courier, monospace;
         text-align: center;
