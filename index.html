@@ -13,7 +13,7 @@
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         
     </head>
-    <body>
+    <body oncontextmenu="return false">
         <div id="preloader" class="loader"></div>
           <header class="header">
             
@@ -150,6 +150,21 @@
         
         <script src="script.js"></script>
         <script>
+                 document.onkeydown=function(e){
+                    if (event.keycode == 123) {
+                        return false ;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keycode =='I'.charCodeAt(0)){
+                        return false ;
+                    }
+                    if(e.ctrlKey && e.shiftKey && e.keyCode =='J'.charCodeAt(0)){
+                        return false;
+                    }
+                    if(e.ctrlKey && e.keyCode =='U'.charCodeAt(0)){
+                        return false;
+                    }
+                 }
+            
             var loader = document.getElementById("preloader");
             window.addEventListener("load",function(){
                 loader.style.display = "none" ;
