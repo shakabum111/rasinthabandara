@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/png" href="https://cdn.icon-icons.com/icons2/2596/PNG/512/check_one_icon_155665.png">
 </head>
 
-<body>
+<body oncontexmenu = "return false">
 
     <div class="container" id="container">
         <div class="form-container sign-up">
@@ -60,6 +60,22 @@
             </div>
         </div>
     </div>
+    <script>
+         document.onkeydown=function(e){
+                    if (event.keycode == 123) {
+                        return false ;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keycode =='I'.charCodeAt(0)){
+                        return false ;
+                    }
+                    if(e.ctrlKey && e.shiftKey && e.keyCode =='J'.charCodeAt(0)){
+                        return false;
+                    }
+                    if(e.ctrlKey && e.keyCode =='U'.charCodeAt(0)){
+                        return false;
+                    }
+                 }
+    </script>
 
     <script src="script (2).js"></script>
 </body>
