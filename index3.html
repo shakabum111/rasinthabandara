@@ -122,6 +122,22 @@
   <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
 <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
 <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script><script  src="11111.js"></script>
+  <script>
+     document.onkeydown=function(e){
+                    if (event.keycode == 123) {
+                        return false ;
+                    }
+                    if (e.ctrlKey && e.shiftKey && e.keycode =='I'.charCodeAt(0)){
+                        return false ;
+                    }
+                    if(e.ctrlKey && e.shiftKey && e.keyCode =='J'.charCodeAt(0)){
+                        return false;
+                    }
+                    if(e.ctrlKey && e.keyCode =='U'.charCodeAt(0)){
+                        return false;
+                    }
+                 }
+  </script>
 
 </body>
 </html>
