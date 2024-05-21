@@ -11,6 +11,8 @@
 </head>
 
 <body oncontextmenu = "return false ">
+            <div id="preloader" class="loader"></div>
+
     <div class="container">
         <nav>
             <h1><a href="rasinthabandara.unaux.com">Film-Hub</a></h1>
@@ -1302,6 +1304,10 @@
                     }
                  }
         new window.VLibras.Widget('https://vlibras.gov.br/app');
+         var loader = document.getElementById("preloader");
+              window.addEventListener("load",function(){
+                loader.style.display = "none" ;
+            })
     </script>
 
 </body>
